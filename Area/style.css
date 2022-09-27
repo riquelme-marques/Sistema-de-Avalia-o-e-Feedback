@@ -1,0 +1,11 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+}
+
+h2 {
+    font-size: 30px;
+    align-items: center;
+    font-weight: bolder;
+}

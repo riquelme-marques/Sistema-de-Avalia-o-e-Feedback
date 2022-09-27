@@ -1,0 +1,9 @@
+$listagem = $pdo->query("SELECT * FROM avaliacao");
+$listagem->execute();
+while($lista = $listagem->fetch(PDO::FETCH_ASSOC)) {
+?>
+
+  <li><?php echo $lista["idavaliacao"]; ?> - <?php echo $lista["nomeusuario"]; ?> - <?php echo $lista["avaliacao"]; ?> - <?php  echo $lista["nomepro"]; ?> - <?php  echo $lista["email"]; ?></li>
+
+<?php
+}
